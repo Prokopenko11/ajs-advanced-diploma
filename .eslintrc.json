@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": "off",
+    "class-methods-use-this": ["error", {
+      "exceptMethods": ["createTooltip", "getRangeForAction", "getClassByName"]
+    }],
+    "no-restricted-syntax": [
+      "error",
+      "ForInStatement"
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": false }
+    ]
+  }
+}
